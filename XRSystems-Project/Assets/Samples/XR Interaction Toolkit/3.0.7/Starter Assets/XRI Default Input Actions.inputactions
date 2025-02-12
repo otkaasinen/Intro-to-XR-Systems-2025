@@ -993,6 +993,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Left Grab",
+                    "type": "Button",
+                    "id": "c405aa87-7829-4d3a-a284-2362fb4748eb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1301,6 +1310,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Left Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3dc7594-007a-4759-b1e4-3013b947b04b",
+                    "path": "<OculusTouchController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2104,6 +2124,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Right Grab",
+                    "type": "Button",
+                    "id": "8bc2a2ce-0508-4a1f-9037-a8d38218b49a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -2412,6 +2441,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Right Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9a4f9dd-d3ff-4143-b568-9709c3404000",
+                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
