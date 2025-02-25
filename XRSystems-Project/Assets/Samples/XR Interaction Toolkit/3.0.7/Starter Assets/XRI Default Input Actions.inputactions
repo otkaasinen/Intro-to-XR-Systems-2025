@@ -962,7 +962,7 @@
                     "name": "Scale Toggle",
                     "type": "Button",
                     "id": "80ed7d74-56de-473c-bf76-da3bdd16b562",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -995,13 +995,22 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Left Grab",
-                    "type": "Button",
+                    "name": "Left Grip",
+                    "type": "Value",
                     "id": "c405aa87-7829-4d3a-a284-2362fb4748eb",
-                    "expectedControlType": "",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Left Trigger",
+                    "type": "Value",
+                    "id": "7521c371-dd57-4780-b772-a2080e1a506d",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1316,11 +1325,22 @@
                 {
                     "name": "",
                     "id": "a3dc7594-007a-4759-b1e4-3013b947b04b",
-                    "path": "<OculusTouchController>{LeftHand}/gripPressed",
+                    "path": "<XRController>{LeftHand}/grip",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Left Grab",
+                    "action": "Left Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1ec9a9e9-3075-434e-bc41-3e593529de11",
+                    "path": "<XRController>{LeftHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Trigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -2126,13 +2146,22 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Right Grab",
-                    "type": "Button",
+                    "name": "Right Grip",
+                    "type": "Value",
                     "id": "8bc2a2ce-0508-4a1f-9037-a8d38218b49a",
-                    "expectedControlType": "",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Right Trigger",
+                    "type": "Value",
+                    "id": "7be2a9ff-64dd-4605-9beb-917f5e7800d8",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -2447,11 +2476,22 @@
                 {
                     "name": "",
                     "id": "b9a4f9dd-d3ff-4143-b568-9709c3404000",
-                    "path": "<OculusTouchController>{RightHand}/gripPressed",
+                    "path": "<XRController>{RightHand}/grip",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Right Grab",
+                    "action": "Right Grip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db084f3a-1e00-4203-a198-c8a9b880599e",
+                    "path": "<XRController>{RightHand}/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Trigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
