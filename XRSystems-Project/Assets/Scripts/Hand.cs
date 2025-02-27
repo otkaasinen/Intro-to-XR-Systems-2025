@@ -74,7 +74,7 @@ public class Hand : MonoBehaviour
 
         var positionWithOffset = _followTarget.TransformPoint(positionOffset);
         var distance = Vector3.Distance(positionWithOffset, transform.position);
-        _body.velocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance);
+        _body.linearVelocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance);
 
         // Rotation
 
